@@ -11,7 +11,7 @@ export class AppComponent {
  newitem = "";
  pushitem = function (){
 
-  if(this.newitem != ""){
+  if(this.newitem.trim() != ""){
 
     this.items.push(this.newitem),
     this.newitem = "";
